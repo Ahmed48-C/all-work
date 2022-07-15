@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Software Web</title>
+        <link rel="stylesheet" href="css/main.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a href="index.html"><img src="" alt="logo"></a>
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="work.html">Work</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contactUs.html">Contact Us</a></li>
+                    </ul>
+                </div>  
+            </nav>
+        </header>
+
+        <div class="contact-cont">
+            <div class="contact-box">
+                <div class="contact-left">
+                    <div><i class="fas fa-map-marker-alt"></i><h3> Address, City, Country</h3></div>
+                    <div><i class="fas fa-envelope"></i><h3>contact@email.com</h3></div>
+                    <div><i class="fas fa-phone"></i><h3>+00 0000 000 000</h3></div>
+                    <!-- <div><i class="fas fa-clock"></i>Mon - Fri 8:00 AM to 5:00 PM</div> -->
+                </div>
+                <div class="contact-right">
+                    <form onsubmit="sendEmail(); reset(); return false;">
+                        <h2>Contact Us</h2>
+                        <input type="text" class="field" placeholder="Name" required>
+                        <input id="email" type="text" class="field" placeholder="Email" required>
+                        <input type="text" class="field" placeholder="Phone" required>
+                        <textarea placeholder="Message" class="field"></textarea>
+                        <button type="submit" class="btn">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html> 

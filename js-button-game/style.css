@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    min-height: 100vh;
+}
+
+.content .result-details{
+    background: #D6D58E;
+    min-width:206.7vh;
+    min-height: 13vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.result-details li{
+    display: flex;
+    list-style: none;
+    position: relative;
+    align-items: center;
+}
+
+.result-details li span{
+    display: block;
+    font-size: 20px;
+    margin-left: 5px;
+}
+
+.wrapper .content ul li:first-child{
+    margin-right: 20px;
+    /* margin-left: 155vh; */
+} 
+
+.content .result-details .time{
+    margin-right: 20px;
+}
+
+.content .result-details .score{
+    margin-right: 20px;
+}
+
+.content .result-details .highscore{
+    margin-right: 35px;
+}
+
+.result-details button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper .restart .restart-btn{
+    border: none;
+    width: 80px;
+    height: 32px;
+    font-size: 14px;
+    font-weight: 450;
+    background: #005C53;
+    border-radius: 3px;
+    color: rgb(228, 228, 228);
+    cursor: pointer;
+    
+}
+
+.wrapper .game-space{
+    /* background: rgba(25, 50, 59, 0.795); */
+    background: #042940;
+    min-height:87vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper .game-space button{
+    width: 100px;
+    height: 38px;
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    background: #DBF227;
+    border-radius: 2px;
+    position: absolute;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    margin-top: 13vh;
+}
+
+.wrapper .game-space button b {
+    font-size: 18px;
+    font-weight: 500;
+    pointer-events: none;
+}
+
+/* pointer-events: none;
+opacity: 0.6; */
+
+.popup{
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content{
+    height: 300px;
+    width: 500px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.popup-button{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.popup-content p{
+    font-size: 17px;
+    font-weight: 300;
+    word-break:keep-all;
+}
+
+.popup-content button{
+    border: none;
+    width: 82px;
+    height: 41px;
+    font-size: 14px;
+    font-weight: 450;
+    background: #017468;
+    border-radius: 3px;
+    color: rgb(228, 228, 228);
+    cursor: pointer;
+    margin: 50px;
+}
+
+.popup-timer{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.popup-timer li{
+    list-style: none;
+}

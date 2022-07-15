@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Button Game</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="content">
+                <ul class="result-details">
+                    <li class="restart">
+                        <button class="restart-btn" id="restart-button">Restart</button>
+                    </li>
+
+                    <li class="time">
+                        <p>Time Left:</p>
+                        <span><b id="count">15</b></span>
+                    </li>
+
+                    <li class="score">
+                        <p>Score:</p>
+                        <span><b>0</b></span>
+                    </li>
+
+                    <li class="highscore">
+                        <p>High Score:</p>
+                        <span><b onload="loadHS">0</b></span>
+                    </li>
+                </ul>
+            </div>
+            <div class="game-space">
+                <button class="game-button" id="button" onclick="increaseScr()"><b>Press</b></button>
+            </div>
+
+            <div class="popup">
+                <div class="popup-content">
+                    <p>Press The Button As Much As Possible To Get The Highest Score While It Move Each Time You Press The Button</p>
+                    <!-- <div class="popup-button">
+                        <button class="popupBtn">Start Playing</button>
+                    </div> -->
+
+                    <div class="popup-timer">
+                        <li class="popup-time">
+                            <span><b id="popup-timer">5</b></span>
+                        </li>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+
+    </body>
+</html>
